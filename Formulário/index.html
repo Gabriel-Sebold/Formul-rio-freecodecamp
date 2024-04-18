@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name= "viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Formulário Dev</h1>
+    <p id="description">Aqui quero saber mais sobre sua experiência como Dev</p>
+    <form action="Gabriel-Sebold@hotmail.com" id="survey-form">
+      <label class="lid" id="name-label" for="name"> Qual seu nome completo?
+        <input class="ident" id="name" type="text" placeholder="Nome Completo" required>
+      </label>
+      <label class="lid" id="email-label" for="email">
+        Me diga seu melhor e-mail:
+        <input class="ident" id="email" type="email" placeholder="E-mail" required>
+      </label>
+      <label class="lid" id="number-label" for="number">
+        Quantos anos você tem?
+        <input class="ident" id="number" type="number" placeholder="Idade" min="14" max="120" required>
+      </label>
+      <p>Em que área você atua?
+      <select class="ident" id="dropdown">
+        <option class="ident" value="">Selecione um</option>
+        <option class="ident" value="1">Ainda não sei</option>
+        <option class="ident" value="1">Front-End</option>
+        <option class="ident" value="2">Back-End</option>
+        <option class="ident" value="3">Full-Stack</option>
+      </select>
+      <figure>  
+        <figcaption>Você ja trabalha ma área?</figcaption>
+        <label class="opt"><input  type="radio" name="trabalha" value="sim"> Sim</label>
+        <label class="opt"><input type="radio" name="trabalha" value="nao"> Não</label>
+      </figure>
+      <div>  
+        <p>Com quais linguagens de programação você tem experiência?</p>
+        <label class="opt" for="javascript">
+          <input id="javascript" value="javascript" type="checkbox"> JavaScript</label>
+        <label class="opt" for="python">
+          <input id="python" value="python" type="checkbox"> Python
+        </label>
+        <label class="opt" for="outra">
+          <input id="outra" value="outra" type="checkbox"> Outra
+        </label>
+        <label class="opt" for="nenhuma">
+          <input id="nenhuma" value="nenhuma" type="checkbox"> Nenhuma
+        </label>
+      </div>
+      <div class="bio">
+        <p>Me conte um pouco sobre sua trilha de aprendizagem:</p>
+        <textarea rows="10" cols="70"></textarea>
+      </div>
+      <input id="submit" type="submit" value="Enviar" class="enviar">
+    </form>
+  </body>
+</html>
